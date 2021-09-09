@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    color:gray;
+    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color:hsl(0, 100%, 74%);
+    background-image: url(/images/bg-intro-mobile.png);
+}
+.white{
+    color:white;
+    text-align: center;
+}
+.orange{
+    color:orange;
+}
+span{
+    font-weight: bold;
+}
+header{
+    width:90%;
+    margin:auto;
+    margin-top:5em;
+    margin-bottom:3em;
+}
+section{
+    width:90%;
+    margin:auto;
+    margin-top:1em;
+}
+h2{
+    font-size: 2em;
+    width:80%;
+    margin:auto;
+    margin-bottom:1em;
+}
+p{
+    font-size: 1.1em;
+}
+.trial{
+    background-color: hsl(248, 32%, 49%);
+    height:5em;
+}
+.trial p{
+    width:100%;
+    margin:auto;
+    padding-top:0.5em;
+}
+.outerWrapper{
+    background-color:white;
+    margin-bottom:3em;
+}
+input{
+    width:calc(90% - 1em);
+    height:3em;
+    margin-left:5%;
+    margin-top:5%;
+    font-size: 1em;
+    padding-left: 1em;
+    font-weight:bold;
+}
+@media (min-width:768px) {
+    input{
+        padding-left:2em;
+        width:calc(90% - 2em);
+    }
+}
+.error, .contains{
+    text-align: right;
+    margin-right: 2em;
+}
+section div{
+    position:relative;
+}
+.error img, .contains img{
+    position:absolute;
+    right:1%;
+    top:-2.5em;
+}
+.error p, .contains p{
+    color:red;
+    font-size:0.8em;
+    font-style: italic;
+}
+.claimTrial{
+    width:90%;
+    height:4em;
+    margin-top:1em;
+    margin-left: 5%;
+    background-color: hsl(154, 59%, 51%);
+    cursor: pointer;
+}
+.claimTrial :hover{
+    background-color: hsl(154, 90%, 68%);
+    border-radius: 5px;
+}
+.claimTrial p{
+    width:100%;
+    height:2.8em;
+    margin:auto;
+    padding-top:1.2em;
+    font-weight: bold;
+    font-size: 1em;
+}
+.border{
+    border-radius: 10px;
+}
+.smallBorder{
+    border-radius: 5px;
+}
+.diff{
+    text-align: center;
+    width:80%;
+    margin:auto;
+    font-size: 0.7em;
+    word-spacing: 2px;
+    padding:1em 0;
+}
+@media (max-width:768px) {
+    .trial p{
+        padding-top:1em;
+        width:70%;
+    }
+}
+@media (max-width:340px) {
+    .trial p{
+        width:80%;
+        padding-top: 0.5em;
+    }
+    .claimTrial p{
+        width:90%;
+    }
+}
+@media (min-width:769px) {
+    body{
+        background-image: url(/images/bg-intro-desktop.png);
+        width:80%;
+        margin:auto;
+        margin-top:10vh;
+        display: grid; 
+        grid-template-columns: auto auto; 
+        grid-template-rows: auto auto; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "header trial"
+        "header singUp"; 
+    }
+    header{
+        grid-area: header;
+        width:80%;
+        margin:auto;
+        margin-left:0;
+    }
+    .firstSection{
+        grid-area: trial;
+        width:40vw;
+    }
+    .secondSection{
+        grid-area: singUp;
+        width:40vw;
+    }
+    .left{
+        text-align: left;
+    }
+    h2{
+        width:100%;
+        font-size: 4em;
+        line-height: 1em;
+    }
+    .trial p{
+        width:80%;
+        padding-top:1.5em;
+    }
+}
+.error{
+display:none;
+}
+.contains{
+    display:none;
+}
