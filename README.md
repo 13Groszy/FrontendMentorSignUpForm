@@ -46,6 +46,6 @@ More JS practice to save the code. Actual JS file have 30 lines from around 50 a
 
 ## Author
 
-- Website - [Mateusz Daszkiewicz](https://www.mdaszkiewicz.netlify.app)
+- Website - [Mateusz Daszkiewicz](https://mdaszkiewicz.netlify.app)
 - Frontend Mentor - [@13Groszy](https://www.frontendmentor.io/profile/13Groszy)
 - LinkedIn - [Mateusz Daszkiewicz](https://www.linkedin.com/in/mateusz-daszkiewicz-66371a196)
